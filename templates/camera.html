@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block body %}
+    <form method="post" action="/camera">
+        <div class="col p-8 camera">
+            <div class="title">
+                <h2>Camera</h2>
+                <input type="submit" value="Stop/Start" class="btn btn-info">
+            </div>
+            <div class="clear"></div>
+            <div class="camera">
+                <img src="{{ url_for('video_feed_camera') }}">
+            </div>
+        </div>
+        <div class="col p-4 bg-dark text-white ketqua">
+            <h2>Kết Quả Dự Đoán</h2>
+        </div>
+        <div class="clear"></div>
+        
+    </form>
+
+{% endblock body %}

@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block body %}
+  <div class="col-sm-12 p-3 bg-primary text-white left-container">
+    <div class="center-content">
+      <h2>Lựa chọn ảnh để dự đoán</h2>
+      <p>
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            <ul style="list-style:none;">
+              {% for message in messages %}
+                <li>{{message}}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        {% endwith %}
+      </p>
+      {% if filename %}
+        <div class="image-upload" style="padding: 20px">
+          <img src="{{ url_for('display_images', filename=filename) }}">
+        </div>
+        <div class="predict">
+          {% if resp %}
+            <p>Class id: {{resp['class_id']}}</p>
+            <p>Class name: {{resp['class_name']}}</p>
+            <p>Accuracy: {{resp['acc']}}%</p>
+          {% endif %}
+        </div>
+      {%endif%}
+    </div>
+    <form method="post" action="/" enctype="multipart/form-data">
+        <dl>
+          <p>
+            <input type="file" name="file" class="form-control" autocomplete="off" required>
+          </p>
+        </dl>
+        <p>
+          <input type="submit" name="submit" value="Predict" class="btn btn-info" />
+        </p>
+    </form>
+  </div>
+{% endblock body%}
