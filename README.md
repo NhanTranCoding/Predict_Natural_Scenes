@@ -18,3 +18,4 @@
 <video>
   ﻿ <source src="https://github.com/NhanTranCoding/CNN_Predict_Natural_Scenes/assets/129369698/f6252521-43f3-400b-ac9a-f9e824d85962" type="video/mp4" />
 </video>
+https://github.com/NhanTranCoding/CNN_Predict_Natural_Scenes/assets/129369698/f6252521-43f3-400b-ac9a-f9e824d85962
