@@ -13,4 +13,8 @@
 <img src="https://github.com/NhanTranCoding/CNN_Predict_Natural_Scenes/assets/129369698/cb9d03da-e3ac-416c-8895-b0a46dc58dcc" width="400">
 <img src="https://github.com/NhanTranCoding/CNN_Predict_Natural_Scenes/assets/129369698/b0b631d6-3baa-47ef-a724-c0c917e83fd8" width="400"><br>
 <img src="https://github.com/NhanTranCoding/CNN_Predict_Natural_Scenes/assets/129369698/26ebacac-ece3-4b1c-a3ab-c66ebba107e3" width="400"><br>
+
 ## Dự đoán qua video
+<video>
+  ﻿ <source src="https://github.com/NhanTranCoding/CNN_Predict_Natural_Scenes/assets/129369698/f6252521-43f3-400b-ac9a-f9e824d85962" type="video/mp4" />
+</video>
